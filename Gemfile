@@ -13,6 +13,7 @@ gem 'sqlite3', group: [:development, :test]
 gem 'pg', '~> 0.21.0', group: :production
 gem 'rails_12factor', group: :production
 gem 'puma', '~> 3.7'
+gem 'stripe', '~> 3.8'
 gem 'sass-rails', '~> 5.0'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
