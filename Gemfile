@@ -6,9 +6,12 @@ git_source(:github) do |repo_name|
 end
 
 
+ruby '2.4.1'
 
 gem 'rails', '~> 5.1.4'
-gem 'sqlite3'
+gem 'sqlite3', group: [:development, :test]
+gem 'pg', '~> 0.21.0', group: :production
+gem 'rails_12factor', group: :production
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
