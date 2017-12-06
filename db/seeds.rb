@@ -13,7 +13,16 @@ gammaBomb = Product.create(
   image_name: "incredible_hulk103.jpg",
   price: "4.99",
   sku: "IH103",
-  info: "In ancient times he was worshipped as a god; he has not forgotten this.",
   download_url: "https://s3.us-east-2.amazonaws.com/comic-app/incredible_hulk103.jpg",
   details: "One of the most iconic characters in popular culture.",
   description: %{<p>The 1990s saw the Green Hulk return.</p>})
+
+spiderMan = Product.create(
+  title: "The Amazing Spiderman",
+  subtitle: "issue 100",
+  image_name: "amazing_spiderman100.jpg",
+  price: "4.99",
+  sku: "SM100",
+  download_url: "https://s3.us-east-2.amazonaws.com/comic-app/amazing_spiderman100.jpg",
+  details: "One of the most iconic characters in popular culture.",
+  description: %{<p>Does whatever a spider can!</p>})
