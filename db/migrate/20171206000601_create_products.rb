@@ -8,7 +8,7 @@ class CreateProducts < ActiveRecord::Migration[5.1]
 		  t.string :download_url 
 		  t.string :details 
 		  t.text :description
-		  t.decimal :price 
+		  t.decimal :price
 
       t.timestamps
     end
