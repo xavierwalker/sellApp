@@ -1,13 +1,13 @@
 class ChargesController < ApplicationController
 
 		def create
-			product = Product.find_by_sku("ih103")
+			product = Product.find(params[:product_id])
 		  # Amount in cents
 
 		  customer = Stripe::Customer.create(
 		    :email => params[:stripeEmail],
 		    :source  => params[:stripeToken],
-		    :plan => "HULK"
+		    :plan => product.sku
 		  )
 
 			purchase = Purchase.create(email: params[:stripeEmail], card: params[:stripeToken], amount: product.price_in_cents, description: product.description, currency: "usd", customer_id: customer.id, product_id: product.id, uuid: SecureRandom.uuid)
