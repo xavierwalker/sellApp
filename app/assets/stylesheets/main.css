@@ -33,14 +33,14 @@ ul.no-indent {
 /* SHARED PAGE STYLES */
 
 body {
-    background-color:#80c2eb;   
+    background-color:#aa703d;   
     background-size: 25%;
     font-family: 'Open Sans', sans-serif;
 }
 
 #content {
     margin: 40px auto 20px auto;
-    background: white;
+    background: #ba8a60;
     padding: 0px;
     border-radius: 15px;
     overflow: hidden;
